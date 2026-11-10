@@ -5,7 +5,7 @@ apply plugin: 'com.google.gms.google-services'
 android {
     signingConfigs {
         release {
-            storeFile file('C:/Users/Administrator/Desktop/VPN/HTTP Fenix-1/KeyApp.jks')
+            storeFile file('KeyApp.jks')
             storePassword 'Mailojoya2020'
             keyAlias 'mrx470'
             keyPassword 'Mailojoya2020'
