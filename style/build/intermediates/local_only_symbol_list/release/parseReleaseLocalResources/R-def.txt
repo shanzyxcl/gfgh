@@ -1,0 +1,37 @@
+R_DEF: Internal format may change without notice
+local
+color bg_rounted
+color black_light
+color blue
+color blue2
+color blue3
+color blue4
+color blue_light
+color colorAccent
+color colorPrimary
+color colorPrimaryBackground
+color colorPrimaryDark
+color colorSecondary
+color colorSecondaryBackground
+color colorText
+color colorText2
+color colorTextDisabled
+color colorTextEnabled
+color gray
+color gray2
+color gray3
+color gray_light
+color green
+color red
+color romz_color
+color spinner_bg
+color tab
+color tab_bg
+color tab_text
+color textColorPrimary
+color textColorSecondary
+color text_color
+color toolbar_bg
+color vince
+color white
+color yellow

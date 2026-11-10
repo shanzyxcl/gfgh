@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262626"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/txt_acumulado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginBottom="10dp"
+        android:padding="8dp"
+        android:text="Horas VIP: 0/24"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txtTituloRuleta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="🍀 ¡Ruleta de la Fortuna Fénix! 🚀"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/contenedorRuleta"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_centerInParent="true">
+
+        <View
+            android:id="@+id/vistaRuleta"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="-25dp"
+            android:text="🔻"
+            android:textSize="35sp" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnGirar"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contenedorRuleta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FF9800"
+        android:text="🎰 GIRAR"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</RelativeLayout>

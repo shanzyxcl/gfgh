@@ -1,0 +1,38 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/google/' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin/' }
+        maven { url "https://jitpack.io" }
+        maven { url "https://clojars.org/repo/" }
+        maven { url 'https://repo.jenkins-ci.org/public/'}
+        mavenLocal()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.6.0'
+        classpath 'com.google.gms:google-services:4.4.2'
+        classpath 'com.github.CodingGay:BlackObfuscator-ASPlugin:3.9'
+
+
+    }
+
+}
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/google/' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin/' }
+        maven { url "https://jitpack.io" }
+        maven { url "https://clojars.org/repo/" }
+        maven { url 'https://repo.jenkins-ci.org/public/'}
+        mavenLocal()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

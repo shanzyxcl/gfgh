@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10.0dip"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5.0dip"
+    app:cardCornerRadius="10.0dip"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#03002E">
+	
+	
+    
+    <LinearLayout
+        android:layout_height="50.0dip"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+                                    
+        <LinearLayout
+            android:gravity="center_vertical|left"
+            android:layout_height="50.0dip"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="5.0dip">
+           
+            <ImageView
+                android:id="@+id/servers_image"
+                android:layout_height="35.0dip"
+                android:layout_marginLeft="7.0dip"
+                android:layout_width="40.0dip"/>
+                                        
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+                                            
+                <TextView
+                    android:id="@+id/servers_name"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_width="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="12.0sp"
+                    android:textStyle="bold"/>
+                
+                <TextView
+                    android:id="@+id/servers_info"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_width="wrap_content"
+                    android:textColor="#FF9800"
+                    android:textSize="9.0sp"
+                    android:textStyle="bold"/>  
+                                            
+                                        
+            </LinearLayout>
+            
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+                                                
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_height="25dp"
+                    android:layout_width="25dp"
+                    android:src="@drawable/signal"
+                    app:tint="#04de72" />
+                                            
+                                        
+            </LinearLayout>
+                                        
+                                    
+       </LinearLayout>
+                                    
+                                
+    </LinearLayout>
+    
+           
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_rounted">@color/gray3</color>
+    <color name="black_light">#333333</color>
+    <color name="blue">#07191b</color>
+    <color name="blue2">#ffffff</color>
+    <color name="blue3">#2e6268</color>
+    <color name="blue4">#108700</color>
+    <color name="blue_light">@color/blue</color>
+    <color name="colorAccent">@color/tab_text</color>
+    <color name="colorPrimary">@color/blue</color>
+    <color name="colorPrimaryBackground">@color/blue</color>
+    <color name="colorPrimaryDark">@color/blue</color>
+    <color name="colorSecondary">@color/blue</color>
+    <color name="colorSecondaryBackground">@color/blue</color>
+    <color name="colorText">@color/colorText2</color>
+    <color name="colorText2">#000000</color>
+    <color name="colorTextDisabled">#000000</color>
+    <color name="colorTextEnabled">@color/blue</color>
+    <color name="gray">#000000</color>
+    <color name="gray2">#DEDEDE</color>
+    <color name="gray3">#f2f2f2</color>
+    <color name="gray_light">@color/blue</color>
+    <color name="green">@color/blue2</color>
+    <color name="red">#FD1C0D</color>
+    <color name="romz_color">#000000</color>
+    <color name="spinner_bg">@color/bg_rounted</color>
+    <color name="tab">@color/vince</color>
+    <color name="tab_bg">@color/blue</color>
+    <color name="tab_text">#2e6268</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="textColorSecondary">@color/blue</color>
+    <color name="toolbar_bg">@color/blue</color>
+    <color name="vince">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="yellow">#EEFD00</color>
+</resources>

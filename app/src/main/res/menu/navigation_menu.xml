@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<group android:id="@+id/grupo0">
+
+		<item
+       		android:id="@+id/update"
+			android:icon="@drawable/down"
+        	android:title="Actualizar"/>
+
+
+
+
+    	<item android:id="@+id/miSettings"
+        	android:icon="@drawable/ic_wkk"
+        	android:title="Configuracion"/>
+
+	</group>
+
+	<group android:id="@+id/grupo2">
+
+		<item android:id="@+id/devolper"
+			android:icon="@drawable/contacto"
+			android:title="Desarrollador"/>
+
+		<item android:id="@+id/pruebavelocidad"
+			android:icon="@drawable/speed"
+			android:title="Prueba de velocidad"/>
+
+
+		<item android:id="@+id/telegramm"
+			android:icon="@drawable/telegram"
+			android:title="Canal Telegram"/>
+
+		<item android:id="@+id/grupotelegram"
+			android:icon="@drawable/telegram"
+			android:title="Grupo Telegram"/>
+
+		<item android:id="@+id/hostcris"
+			android:icon="@drawable/hotspot_azul"
+			android:title="Compartir Internet"/>
+
+		<item android:id="@+id/btn_abrir_juego"
+			android:icon="@android:drawable/btn_star_big_on"
+			android:title="🎮 Juego: Mayor o Menor" />
+
+		<item
+			android:id="@+id/btn_juego_frutas"
+			android:icon="@android:drawable/btn_star_big_on"
+			android:title="🎮 Juego: Aplasta Frutas" />
+
+		<item
+			android:id="@+id/btn_abrir_chat"
+			android:title="💬 Chat de la Comunidad"
+			android:icon="@android:drawable/stat_notify_chat" />
+
+		<item
+			android:id="@+id/btn_abrir_ruleta"
+			android:icon="@android:drawable/btn_star_big_on"
+			android:title="🎰 Ruleta de la Fortuna" />
+
+
+
+	</group>
+	<group android:id="@+id/grupo3">
+
+
+
+		<item android:id="@+id/miAbout"
+			android:icon="@drawable/ic_mode_edit_black_48dp"
+			android:title="App Información"/>
+
+	</group>
+
+
+</menu>

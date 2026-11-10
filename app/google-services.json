@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "519257535145",
+    "project_id": "fenix-vpn-92360",
+    "storage_bucket": "fenix-vpn-92360.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519257535145:android:47400a8933c5ac7ec3efb8",
+        "android_client_info": {
+          "package_name": "com.fenix.vpn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfZcaAbhuLw-LZ-cH6in2LN0JX-F0KMVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

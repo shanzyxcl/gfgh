@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "socketclay.compatstyle-release-6:/anim/abc_tooltip_exit.xml",
+        "source": "socketclay.compatstyle-appcompat-1.0.0-1:/anim/abc_tooltip_exit.xml"
+    },
+    {
+        "merged": "socketclay.compatstyle-release-6:/anim/abc_fade_out.xml",
+        "source": "socketclay.compatstyle-appcompat-1.0.0-1:/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "socketclay.compatstyle-release-6:/anim/abc_slide_in_top.xml",
+        "source": "socketclay.compatstyle-appcompat-1.0.0-1:/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "socketclay.compatstyle-release-6:/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "socketclay.compatstyle-appcompat-1.0.0-1:/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "socketclay.compatstyle-release-6:/anim/abc_slide_out_top.xml",
+        "source": "socketclay.compatstyle-appcompat-1.0.0-1:/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "socketclay.compatstyle-release-6:/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "socketclay.compatstyle-appcompat-1.0.0-1:/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "socketclay.compatstyle-release-6:/anim/abc_fade_in.xml",
+        "source": "socketclay.compatstyle-appcompat-1.0.0-1:/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "socketclay.compatstyle-release-6:/anim/abc_tooltip_enter.xml",
+        "source": "socketclay.compatstyle-appcompat-1.0.0-1:/anim/abc_tooltip_enter.xml"
+    },
+    {
+        "merged": "socketclay.compatstyle-release-6:/anim/abc_slide_in_bottom.xml",
+        "source": "socketclay.compatstyle-appcompat-1.0.0-1:/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "socketclay.compatstyle-release-6:/anim/abc_popup_enter.xml",
+        "source": "socketclay.compatstyle-appcompat-1.0.0-1:/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "socketclay.compatstyle-release-6:/anim/abc_slide_out_bottom.xml",
+        "source": "socketclay.compatstyle-appcompat-1.0.0-1:/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "socketclay.compatstyle-release-6:/anim/abc_popup_exit.xml",
+        "source": "socketclay.compatstyle-appcompat-1.0.0-1:/anim/abc_popup_exit.xml"
+    }
+]

@@ -1,0 +1,10 @@
+socketclay.compatstyle-core-1.0.0-0 C:\Users\Administrator\.gradle\caches\8.12\transforms\36e3ce1b1aaaac522b281d739767d147\transformed\core-1.0.0\res
+socketclay.compatstyle-appcompat-1.0.0-1 C:\Users\Administrator\.gradle\caches\8.12\transforms\5d718a7b0b3fe568e714ea0e74619492\transformed\appcompat-1.0.0\res
+socketclay.compatstyle-coordinatorlayout-1.0.0-2 C:\Users\Administrator\.gradle\caches\8.12\transforms\6871d13f748a4571f26bd535d3ad6d59\transformed\coordinatorlayout-1.0.0\res
+socketclay.compatstyle-pngs-3 C:\Users\Administrator\Desktop\HTTP Fenix-3\style\build\generated\res\pngs\release
+socketclay.compatstyle-resValues-4 C:\Users\Administrator\Desktop\HTTP Fenix-3\style\build\generated\res\resValues\release
+socketclay.compatstyle-mergeReleaseResources-5 C:\Users\Administrator\Desktop\HTTP Fenix-3\style\build\intermediates\incremental\release\mergeReleaseResources\merged.dir
+socketclay.compatstyle-mergeReleaseResources-6 C:\Users\Administrator\Desktop\HTTP Fenix-3\style\build\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+socketclay.compatstyle-release-7 C:\Users\Administrator\Desktop\HTTP Fenix-3\style\build\intermediates\merged_res\release\mergeReleaseResources
+socketclay.compatstyle-main-8 C:\Users\Administrator\Desktop\HTTP Fenix-3\style\src\main\res
+socketclay.compatstyle-release-9 C:\Users\Administrator\Desktop\HTTP Fenix-3\style\src\release\res

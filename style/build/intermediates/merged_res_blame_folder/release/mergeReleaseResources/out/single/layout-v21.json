@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "socketclay.compatstyle-release-6:/layout-v21/notification_template_custom_big.xml",
+        "source": "socketclay.compatstyle-core-1.0.0-0:/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "socketclay.compatstyle-release-6:/layout-v21/notification_action.xml",
+        "source": "socketclay.compatstyle-core-1.0.0-0:/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "socketclay.compatstyle-release-6:/layout-v21/notification_action_tombstone.xml",
+        "source": "socketclay.compatstyle-core-1.0.0-0:/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "socketclay.compatstyle-release-6:/layout-v21/notification_template_icon_group.xml",
+        "source": "socketclay.compatstyle-core-1.0.0-0:/layout-v21/notification_template_icon_group.xml"
+    }
+]

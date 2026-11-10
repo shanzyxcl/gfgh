@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+	tools:ignore="MissingTranslation">
+
+    <string name="app_name">HTTP FenixVPN</string>
+
+	<string name="about">Información</string>
+	<string name="config">Configuración</string>
+	<string name="settings">Configuraciones</string>
+	<string name="settings_ssh">Configuración SSH</string>
+	<string name="network_mobile">Red Móvil</string>
+	<string name="method_connection">Metodo de Conexión</string>
+	<string name="rate_app">Calificación</string>
+	<string name="feedback">Reporte de Errores</string>
+	<string name="first_start_msg">Esta aplicación fue desarrollada para usuarios avanzados, tenga esto en cuenta cuando la use.</string>
+	<string name="title_login_main">Detalles de Registro</string>
+
+	<!-- Preference -->
+	<string name="category_forward_udp">Redirección UDP</string>
+	<string name="title_forward_udp">Redirigir UDP</string>
+	<string name="summary_forward_udp">Se activó la redirección para el servidor remoto. Si no, UDP no funcionará.</string>
+	<string name="title_resolver_udp">UDP Gateway (remoto)</string>
+	<string name="summary_resolver_udp">Por Defecto (7300)</string>
+	<string name="category_forward_dns">Reenvío DNS</string>
+	<string name="title_forward_dns">Reenviar DNS</string>
+	<string name="summary_forward_dns">Si está activo, redirige las solicitudes al servidor remoto. De lo contrario, el sistema local utilizará DNS.</string>
+	<string name="title_dns_primary">DNS Primario</string>
+	<string name="summary_dns_primary">Por Defecto (1.1.1.1)</string>
+	<string name="dialog_message_dns_primary">Ingrese la IP DNS</string>
+	<string name="category_advanced_settings">Configuraciones Avanzadas</string>
+	<string name="title_hide_log">Ocultar Registro al Inicar</string>
+	<string name="summary_hide_log">Si activo el registro no se mostrará automáticamente.</string>
+	<string name="title_auto_clear_log">Limpiar Registros Automáticamente</string>
+	<string name="summary_auto_clear_log">Si activo los Registros, se eliminarán automáticamente.</string>
+	<string name="category_forward_port">Reenvío de Puertos</string>
+	<string name="title_mode_debug">Modo de Depuración</string>
+	<string name="summary_mode_debug">Le permite ver información más avanzada en los registros.</string>
+	<string name="title_number_max_threads">Número máximo de Subprocesos</string>
+	<string name="summary_number_max_threads">Cuanto mayor sea el número de subprocesos, mayor será el consumo de energía y la velocidad de conexión en su dispositivo.</string>
+	<string name="category_filter_apps">Filtro de Aplicaciones</string>
+	<string name="title_filter_apps">Filtrar Aplicaciones</string>
+	<string name="title_bypass_mode">Modo Bypass</string>
+	<string name="summary_bypass_modo">Si está activo, o el tráfico de las aplicaciones seleccionadas se enviará directamente.</string>
+	<string name="title_apps_list">Lista de Apps</string>
+	<string name="summary_apps_list">Introduzca un nombre de paquete por línea. Busque en Configuración -> Aplicaciones el nombre del paquete de la aplicación.</string>
+	<string name="category_settings_adicionais">Configuraciones Adicionales</string>
+	<string name="title_mode_night">Modo Nocturno (beta)</string>
+	<string name="title_ping_time">Ping (segundos)</string>
+	<string name="category_user_interface">Interfaz de Usuario</string>
+	<string name="title_language">Idioma</string>
+	<string name="category_tunnel">Túnel</string>
+
+
+	<string name="ssh_server">Servidor</string>
+	<string name="ssh_port">Puerto</string>
+	<string name="ssh_porta_local">Puerto Local (Socks5)</string>
+	<string name="payload">Texto de Conexión</string>
+	<string name="proxy_remote">Proxy Remoto</string>
+	<string name="proxy_ip">Proxy IP/Host</string>
+	<string name="proxy_port">Puerto</string>
+	<string name="proxy_auth">Proxy Authentication</string>
+	<string name="proxy_user">Usuario</string>
+	<string name="proxy_pass">Contraseña</string>
+	<string name="dir_name">Pasta</string>
+
+	<string name ="alert_exit">¿Está seguro/a que quiere salir?</string>
+	<string name="alert_clear_settings">¿Estás seguro/a de que quieres configuración personalizada??</string>
+	<string name="no_value">Vacío</string>
+	<string name="blocked">Bloqueado</string>
+	<string name="expired">Caducado</string>
+	<string name="title_delete_file">Excluir Archivo</string>
+	<string name="alert_delete_file">¿Quieres incluir este archivo?</string>
+	<string name="dir_home_name">Memoria Interna</string>
+	<string name="select_file_setting">Seleccione Archivo</string>
+	<string name="title_permission_request">Otorgar Permisos</string>
+	<string name="message_permission_request">Por favor, es necesario otorgar los permisos necesarios para que la aplicación funcione correctamente.</string>
+	<string name="show_license">Ver Licencias</string>
+
+	<!--- export settings -->
+	<string name="name_file">Nombre del Archivo</string>
+	<string name="export_button">Exportar</string>
+	<string name="title_security">Candado de Seguridad</string>
+	<string name="check_protect">Bloquear la configuración y evitar la edición</string>
+	<string name="title_extra">Extra</string>
+	<string name="check_block_root">Bloquear Root</string>
+	<string name="check_show_login_start">Mostrar login al Iniciar</string>
+	<string name="check_date_valid">Establecer Fecha de Caducidad</string>
+	<string name="input_note_msg">Mensaje / Nota para los usuarios (opcional)</string>
+	<string name="alert_block_settings">El bloqueo de configuración no garantiza el 100 % de seguridad</string>
+	<string name="error_empty_name_file">El nombre del archivo no debe estar vacío</string>
+
+	<!--- action messages -->
+	<string name="minimize">Minimizar</string>
+	<string name="exit">Salir</string>
+	<string name="yes">Si</string>
+	<string name="no">No</string>
+	<string name="save">Guardar</string>
+	<string name="open">Abrir</string>
+	<string name="more">más</string>
+	<string name="cancel">Cancelar</string>
+	<string name="wait">Esperar</string>
+	<string name="attention">Atención</string>
+	<string name="ok">Ok</string>
+	<string name="close">Cerrar</string>
+	<string name="open_with">Abrir con</string>
+	<string name="clear_settings">Restaurar</string>
+	<string name="clear_logs">Borrar Registros</string>
+	<string name="settings_ImportExport">Importar/Exportar</string>
+	<string name="settings_import">Importar Configuración</string>
+	<string name="settings_export">Exportar Configuración</string>
+	<string name="actived">Activado</string>
+	<string name="disabled">Desactivado</string>
+
+	<!--Welcome Wizard strings (DJH)-->
+	<string name="wizard_details">Algunos detalles de HTTP FenixVPN </string>
+	<string name="wizard_details_msg">HTTP FenixVPN es un cliente VPN que funciona a través de un servidor SSH. La aplicación en sí es inútil sin una configuración, por lo que es solo para usuarios avanzados.</string>
+	<string name="payload_details">Palabras Clave</string>
+	<string name="payload_details_msg">Las siguientes palabras clave se admiten actualmente en el texto de conexión: [method] [host_port] [ssh] [host] [port] [protocol] [crlf] [cr] [lf] [lfcr] [ua] [random=*;] [rotate=*;] [split] [delay_split]</string>
+	<string name="project_home">Desarrollador Inicio:</string>
+	<string name="project_urls">http://t.me/MRX470</string>
+	<string name="third_party_software">Third Party Software</string>
+	<string name="jsocks_version">JSocks v1.0.1: https://jsocks.sourceforge.net</string>
+	<string name="trileadssh2_version">Trilead SSH-2 Build 217: https://github.com/jenkinsci/trilead-ssh2</string>
+
+	<!--- error messages -->
+	<string name="error_tunnel_service_execution">Servicio en ejecución, deténgalo primero</string>
+	<string name="error_no_supported">Función no admitida por su dispositivo</string>
+	<string name="error_invalid_settings">Configuración no válida</string>
+	<string name="error_settings_blocked">Configuración bloqueada</string>
+	<string name="error_delete_file">No se pudo eliminar el archivo</string>
+	<string name="error_file_config_incompatible">Archivo no soportado</string>
+	<string name="error_file_not_found">Archivo no encontrado</string>
+	<string name="error_permission_writer_required">Se requiere permiso de escritura</string>
+	<string name="error_date_selected_invalid">El día seleccionado no puede ser menos que hoy</string>
+	<string name="error_export_settings">No se pudo exportar la configuración</string>
+	<string name="success_clear_settings">Se restauraron los ajustes</string>
+	<string name="success_import_settings">Archivo importado</string>
+	<string name="success_export_settings">Configuración exportada</string>
+
+	<!-- Ainda Falta Traduzir -->
+	<string name="title_agradecimento_especial">Agradecimientos especiales a</string>
+	<string name="error_userpass_empty">Ingrese el nombre de usuario / contraseña proporcionado por el creador de la configuración</string>
+	<string name="title_disable_delay_ssh">Deshabilitar TCP Delay</string>
+	<string name="summary_disable_delay_ssh">Si está activo, no habrá retrasos entre las solicitudes, lo que puede mejorar el ping o incluso la velocidad de la conexión..</string>
+	<string name="title_tethering_subnet">Anclaje de Subred (beta)</string>
+	<string name="summary_tethering_subnet">Habilítelo si tiene problemas para compartir sus dispositivos en Internet.</string>
+
+	<string name="sName">p0PgL3l0d89mnssz7ImPJA==</string>
+	<string name="sInfo">66P9ZUEM1ju4WGhv856BSg==</string>
+	<string name="sFlag">ACqWMY4zuZWzSEs8cZMXIw==</string>
+
+	<string name="ServerIP">U7V8DoP4cYkXJjCnpqW6nQ==</string>
+	<string name="ServerPort">p9ZPlMv9V7gDszRoUaNaJw==</string>
+	<string name="ServerSSL">maGFM5lWW4YSDpfPQBmdRA==</string>
+	<string name="ProxyIp">SbDP19AbQur0YtkkyRlVMA==</string>
+	<string name="ProxyPort">vXfVafVdyaCRTDj6uBT6lg==</string>
+	<string name="Payload">PFFSWRJKZmOcNLTZxFwgjQ==</string>
+	<string name="SNI">tmSbWiCK1hvytJ9f3gflkQ==</string>
+	<string name="ServerUser">mtw364P3ZslP2CZYuHTCHQ==</string>
+	<string name="ServerPass">Fo3TT4oONvv69IQIMg1aLg==</string>
+
+	<string name="Slowchave">UxdyIntdYykCdV76crKnwg==</string>
+	<string name="Nameserver">l7MIgkbuXMmGaaQGd54F2w==</string>
+	<string name="Slowdns">QSln2zKCBJvqH9qV4M0ifg==</string>
+
+	<string name="udpserver">ITkWvEHp29BmMaLMEGUFcw==</string>
+	<string name="udpport">2kDKELRmSE143VdcX3FPzw==</string>
+	<string name="udpObfs">iW1aO5DgThVAeo23xTsXSw==</string>
+	<string name="udpauth">b3MPypEFR83rzFKUa4UbCw==</string>
+	<string name="udpdown">MkRXl4D9vpREVCJ0w4qrgg==</string>
+	<string name="udpup">B5jcTSGuJUFbTtH5O1IaBg==</string>
+	<string name="udpbuffer">asmRO4zXsRjhDYX42dbNuw==</string>
+
+	<string name="V2rayAddress">oAqgFKE3WywLRvSvKffLOA==</string>
+	<string name="V2rayPort">b6stZNVaFUjLCw88dn03Ng==</string>
+	<string name="V2rayHost">BWTPMwR0iRu1N9twHCpbAg==</string>
+	<string name="v2rayid">EtNSBhechjWxm2t50NyB9Q==</string>
+	<string name="v2raypath">aH2nzD4eDLxPSxIAlVivdg==</string>
+	<string name="v2rayJson">W4CbS1nMWo6Y2noeUFHmXQ==</string>
+
+	<string name="Username">Username</string>
+	<string name="Password">Password</string>
+	<string name="Obfs">Obfs</string>
+	<string name="Auth">Auth</string>
+	<string name="ID">ID</string>
+	<string name="Path">Path</string>
+
+	<string name="OtrasConfigs">MIgkNbuX29MmGatZNVaFUj==</string>
+	<string name="VMESS">VMESS</string>
+	<string name="serverType">serverType</string>
+	<string name="tunnelType">tunnelType</string>
+
+
+	---------------------------------------------------------------------
+
+	<string name="app_description" tools:ignore="ExtraTranslation">HTTP FenixVPN es un cliente SSH TUNNEL, utilizado para saltar bloqueos locales y censura de la red.</string>
+
+	<string name="importing_settings">Importando Configuración</string>
+	<string name="log_settings_valid">Archivo válido até: %1$s</string>
+	<string name="log_server_banner">Mensaje del Servidor:</string>
+	<string name="log_conection_lost">Conexión perdida</string>
+
+
+	<string name="start">Conectar</string>
+	<string name="stop">Desconectar</string>
+	<string name="reconnect">Reconectar</string>
+
+	<string name="title_auth">Autenticación</string>
+	<string name="auth_message">Complete con sus datos de Usuario</string>
+	<string name="auth_username">Nombre de Usuario</string>
+	<string name="password">Contraseña</string>
+	<string name="show_password">Mostrar contraseña</string>
+	<string name="save_password">Guardar contraseña</string>
+
+
+	<string name="channel_name_background">Connection statistics</string>
+	<string name="channel_description_background">Estadísticas en curso de la conexión HTTP FenixVPN establecida</string>
+	<string name="channel_name_status">Cambio de estado de conexión</string>
+	<string name="channel_description_status">Cambios de estado de la conexión HTTP FenixVPN (conectando, autenticando, ...)</string>
+	<string name="channel_name_userreq">Se requiere interacción del usuario</string>
+	<string name="channel_description_userreq">La conexión HTTP FenixVPN requiere una entrada del usuario, por ejemplo, autenticación de dos factores</string>
+
+	<string name="state_starting">Iniciando</string>
+	<string name="state_connecting">Conectando</string>
+	<string name="state_wait">Esperando respuesta del servidor</string>
+	<string name="state_auth">Verificando</string>
+	<string name="state_auth_success">Verificado</string>
+	<string name="state_get_config">Obteniendo la configuración del cliente</string>
+	<string name="state_assign_ip">Asignación de direcciones IP</string>
+	<string name="state_add_routes">Agregar rutas</string>
+	<string name="state_connected">Conectado</string>
+	<string name="state_disconnected">Desconectado</string>
+	<string name="state_reconnecting">Reconectando</string>
+	<string name="state_stopping">Deteniendo</string>
+	<string name="state_noprocess">No corriendo</string>
+	<string name="state_resolve">Resolviendo nombres de host</string>
+	<string name="state_tcp_connect">Conectando (TCP)</string>
+	<string name="state_auth_failed">Autenticación fallida</string>
+	<string name="state_nonetwork">Esperando red</string>
+	<string name="state_waitconnectretry">Esperando% ss segundos entre intentos de conexión</string>
+	<string name="state_auth_pending">Esperando autenticación</string>
+	<string name="state_user_vpn_password">Waiting for user VPN password</string>
+	<string name="state_user_vpn_permission">Waiting for user permission to use VPN API</string>
+	<string name="state_user_vpn_password_cancelled">VPN password input dialog cancelled</string>
+	<string name="state_user_vpn_permission_cancelled">VPN API permission dialog cancelled</string>
+	<string name="unknown_state">Estado desconocido</string>
+	<string name="nought_alwayson_warning"><![CDATA[Si no obtuvo un diálogo de confirmación de VPN, tiene \ "Siempre en VPN \" habilitado para otra aplicación. En ese caso, solo esa aplicación puede conectarse a una VPN. Verifique en Configuración-> Redes más .. -> VPNS]]></string>
+	<string name="no_vpn_support_image">Su imagen no es compatible con la API VPNService, lo siento :(</string>
+	<string name="state_proxy_running">Proxy en ejecución</string>
+	<string name="state_proxy_inject">Inyectando</string>
+
+	<string name="mobile_info">Funcionando en %3$s %1$s (%2$s), Android %5$s API %4$d</string>
+	<string name="app_mobile_info">HTTP FenixVPN v%1$s %2$s</string>
+
+	<string name="alert_update_app">Instale la versión más reciente</string>
+	<string name="error_settings_expired">Archivo expirado</string>
+	<string name="error_file_settings_invalid">Configuración inválida</string>
+	<string name="error_file_invalid">Archivo invalido</string>
+	<string name="error_internet_off">Por favor, conectese a internet</string>
+	<string name="error_empty_payload">El payload no puede quedar vacio</string>
+	<string name="error_empty_settings">Configurar correctamente para comenzar</string>
+	<string name="error_proxy_invalid">Proxy inválido</string>
+	<string name="error_server_ip_invalid">Servidor/IP inválido</string>
+	<string name="error_root_detected">Configuración bloqueada para dispositivos con acesso root</string>
+	<string name="error_vpn_sniffer_detected">Otro aplicativo VPN en ejecución fue detectado, detengalo</string>
+	<string name="error_save_settings">No fue posible guardar la configuración</string>
+	<string name="v2ray_connected">Conectado</string>
+
+
+</resources>
+

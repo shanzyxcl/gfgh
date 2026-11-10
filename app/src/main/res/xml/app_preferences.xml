@@ -1,0 +1,167 @@
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:key="screenMain">
+
+
+	<androidx.preference.PreferenceCategory
+		app:isPreferenceVisible="false"
+		android:title="Opciones de Conexión">
+
+		<androidx.preference.SwitchPreferenceCompat
+			android:key="speed_meter"
+			app:isPreferenceVisible="false"
+			android:title="Mostrar Velocidad de Red"
+			android:summary="Muestra la velocidad actual de la red y el uso de datos en la notificación"
+			android:defaultValue="true"/>
+
+	</androidx.preference.PreferenceCategory>
+
+
+	<androidx.preference.PreferenceCategory
+		android:title="Compresión de Datos">
+
+		<androidx.preference.SwitchPreferenceCompat
+			android:key="data_compression"
+			android:title="Compresión de Datos"
+			android:summary="Comprime y acelera la transferencia de datos para archivos/datos que se pueden comprimir. NO recomendado para dispositivos con poca memoria."
+			android:defaultValue="true"/>
+
+	</androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="Activación de CPU">
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="wakelock"
+            android:summary="Activar solo si la aplicación deja de funcionar por sí sola, como sucede al bloquear la pantalla en algunos dispositivos."
+            android:title="Activación de CPU" />
+
+	</androidx.preference.PreferenceCategory>
+
+
+	<androidx.preference.PreferenceCategory
+		android:title="@string/category_forward_udp">
+
+		<androidx.preference.SwitchPreferenceCompat
+			android:key="udpForward"
+			android:summary="@string/summary_forward_udp"
+			android:title="@string/title_forward_udp" />
+
+		<com.fenix.vpn.view.SummaryEditTextPreference
+            android:key="udpResolver"
+            android:title="@string/title_resolver_udp"
+            android:summary="@string/summary_resolver_udp"
+            android:dialogMessage=""
+			android:singleLine="true"
+			android:dialogLayout="@layout/pref_dialog_edittext_fix" />
+
+	</androidx.preference.PreferenceCategory>
+
+
+	<androidx.preference.PreferenceCategory
+		android:title="@string/category_forward_dns">
+
+		<androidx.preference.SwitchPreferenceCompat
+			android:key="dnsForward"
+			android:summary="@string/summary_forward_dns"
+			android:title="@string/title_forward_dns" />
+
+		<com.fenix.vpn.view.SummaryEditTextPreference
+            android:key="dnsResolver"
+            android:title="@string/title_dns_primary"
+            android:summary="@string/summary_dns_primary"
+            android:dialogMessage="@string/dialog_message_dns_primary"
+			android:singleLine="true"
+			android:dialogLayout="@layout/pref_dialog_edittext_fix" />
+
+	</androidx.preference.PreferenceCategory>
+
+
+	<androidx.preference.CheckBoxPreference
+		android:key="disableDelaySSH"
+		android:defaultValue="ture"
+		android:title="@string/title_disable_delay_ssh"
+		android:summary="@string/summary_disable_delay_ssh"
+		/>
+
+	<!--<android.support.v7.preference.PreferenceCategory
+	    android:title="Utilidad de Ping">
+
+		<android.support.v7.preference.SwitchPreferenceCompat
+			android:key="auto_ping"
+			android:summary="Pinger con url para conexión de mantenimiento, utilizado para estabilizar y evitar que su conexión entre en suspensión."
+			android:title="Auto Ping" />
+
+		<socketclaytclay.vpn.view.SummaryEditTextPreference
+            android:dependency="auto_ping"
+            android:key="ping_server"
+            android:title="Servidor de Ping"
+			android:summary="Establecer servidor de ping"
+			android:defaultValue="clients3.google.com"
+		    android:dialogLayout="@layout/pref_dialog_edittext_fix" />
+
+	</android.support.v7.preference.PreferenceCategory>-->
+
+
+	<androidx.preference.PreferenceCategory
+		android:title="@string/category_settings_adicionais">
+
+		<com.fenix.vpn.view.SummaryEditTextPreference
+		android:key="pingerSSH"
+		android:title="@string/title_ping_time"
+		android:maxLength="3"
+		android:summary="@string/no_value"
+		android:singleLine="true"
+		android:dialogLayout="@layout/pref_dialog_number"/>
+	
+		<androidx.preference.SwitchPreferenceCompat
+			android:key="autoClearLogs"
+			android:summary="@string/summary_auto_clear_log"
+			android:title="@string/title_auto_clear_log"
+		/>
+
+		<androidx.preference.SwitchPreferenceCompat
+			android:key="hideLog"
+			android:summary="@string/summary_hide_log"
+			android:title="@string/title_hide_log"
+		/>
+
+	</androidx.preference.PreferenceCategory>
+
+
+	<androidx.preference.PreferenceCategory
+	android:title="@string/category_user_interface">
+
+	<androidx.preference.ListPreference
+	android:key="idioma"
+	android:defaultValue="default"
+	android:entries="@array/pref_idioma_option_labels"
+	android:entryValues="@array/pref_idioma_option_values"
+	android:title="@string/title_language"
+	/>
+
+	</androidx.preference.PreferenceCategory>
+
+	<androidx.preference.Preference
+	android:key="screenAdvancedSettings"
+
+		app:fragment="com.fenix.vpn.preference.SettingsAdvancedPreference"
+	android:title="@string/category_advanced_settings"
+	/>
+    <androidx.preference.PreferenceCategory
+		android:title="Tema de la Aplicación">
+
+
+		<androidx.preference.ListPreference
+			android:key="modeNight"
+			android:defaultValue="off"
+			android:entries="@array/pref_modoNoturno_option_labels"
+			android:entryValues="@array/pref_modoNoturno_option_values"
+			android:title="Tema Oscuro"
+		/>
+
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>
+

@@ -1,0 +1,313 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:ads="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:background="#1A1B1A"
+	android:src="@drawable/fondofenix"
+	android:layout_height="fill_parent"
+	android:fitsSystemWindows="true"
+	android:orientation="vertical">
+
+
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="55dp"
+		android:background="@color/blue"
+		android:orientation="horizontal">
+
+
+		<ImageView
+			android:id="@+id/atras"
+			android:layout_width="55dp"
+			android:layout_height="55dp"
+			android:padding="15dp"
+			android:src="@drawable/back_icon"
+			app:tint="#F30448" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="55dp"
+			android:gravity="left|center"
+			android:text="Wi-fi Shared"
+			android:textColor="#62CC45"
+			android:textSize="21dp" />
+
+
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="55dp"
+		android:layout_weight="1"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_width="148dp"
+			android:layout_height="160dp"
+			android:layout_marginTop="-20dp"
+			android:background="@drawable/gris"
+			android:gravity="center|bottom">
+
+			<pl.droidsonroids.gif.GifImageView
+				android:layout_marginBottom="10dp"
+				android:id="@+id/sinwifi"
+				android:layout_width="118dp"
+				android:layout_height="120dp"
+				android:gravity="center"
+				android:src="@drawable/wifish" />
+
+			<pl.droidsonroids.gif.GifImageView
+				android:id="@+id/conwifi"
+				android:layout_marginBottom="10dp"
+				android:layout_width="118dp"
+				android:layout_height="120dp"
+				android:gravity="center"
+				android:src="@drawable/logo3"
+				android:visibility="gone" />
+
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginTop="200dp"
+		android:layout_weight="1"
+		android:background="#00000000"
+		android:orientation="vertical">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="20dp"
+			android:layout_marginEnd="20dp"
+			android:layout_marginBottom="20dp"
+			android:background="@drawable/gris"
+			android:orientation="vertical"
+			app:cardCornerRadius="20dp"
+			app:cardElevation="3dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:layout_marginStart="10dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="10dp"
+				android:layout_marginBottom="10dp"
+				android:background="@drawable/gris"
+				android:padding="5dp">
+
+				<TextView
+					android:id="@+id/tv_info"
+					android:layout_width="match_parent"
+					android:layout_height="fill_parent"
+					android:gravity="center"
+					android:text="El Wi-Fi Shared esta DESACTIVADO."
+					android:textColor="#FFFFFF"
+					android:textSize="12dp"
+					android:visibility="visible" />
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="80dp"
+				android:layout_marginStart="10dp"
+				android:layout_marginTop="75dp"
+				android:layout_marginEnd="10dp"
+				android:background="@drawable/gris"
+				android:gravity="center"
+				android:padding="10dp">
+
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="0dp"
+					android:orientation="vertical">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_margin="5dp"
+						android:orientation="horizontal">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="fill_parent"
+							android:text="Nombre de Host:"
+							android:textColor="#FFFFFF"
+							android:textStyle="bold|normal" />
+
+						<LinearLayout
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:layout_weight="1.0"
+							android:orientation="horizontal" />
+
+						<TextView
+							android:id="@+id/ipproxy"
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:layout_marginLeft="15dp"
+							android:autoLink="web"
+							android:clickable="true"
+							android:focusable="true"
+							android:text="esperando.."
+							android:textColor="#467cf8"
+							android:textIsSelectable="true"
+							android:textStyle="bold|normal" />
+
+					</LinearLayout>
+
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_margin="5dp"
+						android:orientation="horizontal">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="fill_parent"
+							android:text="Puerto Proxy:"
+							android:textColor="#FFFFFF"
+							android:textStyle="bold|normal" />
+
+						<LinearLayout
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:layout_weight="1.0"
+							android:orientation="horizontal" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:layout_marginLeft="15dp"
+							android:text="8080"
+							android:textColor="#467cf8"
+							android:textIsSelectable="true"
+							android:textStyle="bold|normal" />
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="40dp"
+				android:layout_marginTop="166dp"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+
+				<ToggleButton
+					android:id="@+id/cb_enable1"
+					android:layout_width="90dp"
+					android:layout_height="40dp"
+					android:layout_marginRight="10dp"
+					android:background="@drawable/toggle_wifi"
+					android:text="ToggleButton"
+					android:textColor="#E31E10"
+					android:textOff="  "
+					android:textOn="  " />
+
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="220dp"
+				android:orientation="vertical">
+
+
+			</LinearLayout>
+		</RelativeLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1">
+
+			<com.google.android.gms.ads.AdView
+				android:id="@+id/adBannerWifi"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:visibility="gone"
+				android:layout_alignParentBottom="true"
+				android:layout_centerHorizontal="true"
+				android:layout_gravity="center"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="10dp"
+				ads:adSize="BANNER"
+				ads:adUnitId="ca-app-pub-8193985851272478/7054681017">
+
+			</com.google.android.gms.ads.AdView>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="100dp"
+			android:layout_marginStart="10dp"
+			android:layout_marginEnd="10dp"
+			android:layout_marginBottom="-20dp"
+			android:background="@drawable/gris"
+			android:gravity="bottom"
+			android:orientation="horizontal">
+
+
+			<Button
+				android:id="@+id/restart"
+				android:layout_width="220dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginStart="10dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="10dp"
+				android:layout_marginBottom="20dp"
+				android:layout_weight="1"
+				android:background="@drawable/gris"
+				android:clickable="true"
+				android:gravity="center"
+				android:text="Reiniciar Wi-Fi"
+				android:textColor="#62CC45"
+				android:textSize="12dp"
+				android:visibility="visible"
+				app:cornerRadius="5dp" />
+
+			<Button
+				android:id="@+id/WiFiTetherButton"
+				android:layout_width="220dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginStart="10dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="10dp"
+				android:layout_marginBottom="20dp"
+				android:layout_weight="1"
+				android:background="@drawable/gris"
+				android:clickable="true"
+				android:gravity="center"
+				android:text="Activar anclaje"
+				android:textColor="#62CC45"
+				android:textSize="12dp"
+				app:cornerRadius="5dp"
+				app:rippleColor="#00BFA5" />
+
+		</LinearLayout>
+
+
+	</LinearLayout>
+
+
+</RelativeLayout>

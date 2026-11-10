@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:fitsSystemWindows="true"
+	android:background="#000000">
+
+	<include
+		layout="@layout/toolbar_main"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<ScrollView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:padding="10.0dip"
+			android:background="@drawable/fondofenix"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip">
+
+				<TextView
+					android:textSize="14dip"
+					android:textStyle="bold"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15.0dip"
+					android:layout_marginTop="5.0dip"
+					android:text="QUIENES SOMOS?"
+					android:textColor="#dc2d28"/>
+
+				<TextView
+					android:textSize="12dip"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15.0dip"
+					android:layout_marginTop="5.0dip"
+					android:text="HTTP Fenix VPN, es una Aplicación donde encontraras muchas alternativas como usuario, poder brindarles servicios de Internet de baja latencia para diferentes paises, con conexión anónima y total privacidad, entre muchos más servicios digitales"
+					android:layout_marginBottom="5dp"
+					android:textColor="#ffffff"/>
+
+
+
+
+
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_marginTop="5dip"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+
+				<TextView
+					android:textSize="15dip"
+					android:textStyle="bold"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15.0dip"
+					android:layout_marginTop="5.0dip"
+					android:text="¿CÓMO CONECTAR?"
+					android:textColor="#dc2d28"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15.0dip"
+					android:layout_marginTop="5.0dip"
+					android:text="1. Selecciona el Servidor y Operador de preferencia."
+					android:textColor="#ffffff"
+					android:textSize="12dip" />
+
+				<TextView
+					android:textSize="12dip"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15.0dip"
+					android:text="2. Oprime el botón de agregar Tiempo y mira el anuncio Completo para cargar 2 Horas de conexión."
+					android:textColor="#ffffff"/>
+
+				<TextView
+					android:textSize="12dip"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15.0dip"
+					android:text="3. Dale CONECTAR."
+					android:layout_marginBottom="7.0dip"
+					android:textColor="#ffffff"/>
+
+				<TextView
+					android:textSize="12dip"
+					android:textStyle="bold"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15.0dip"
+					android:layout_marginBottom="5.0dip"
+					android:text="Nota: Verifica que la lista de Servidores esté actualizada"
+					android:textColor="#ffffff"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip">
+
+				<TextView
+					android:textSize="15dip"
+					android:textStyle="bold"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15.0dip"
+					android:layout_marginTop="5.0dip"
+					android:text="Modificada Por:"
+					android:textColor="#dc2d28"/>
+
+				<TextView
+					android:textSize="12dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15.0dip"
+					android:layout_marginTop="5.0dip"
+					android:text="Fenix Dev."
+					android:layout_marginBottom="5dp"
+					android:textColor="#ffffff"
+					android:textStyle="bold|normal"/>
+
+
+
+				<TextView
+					android:textSize="12dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15.0dip"
+					android:layout_marginTop="5.0dip"
+					android:text="Politicas de privacidad"
+					android:layout_marginBottom="5dp"
+					android:textColor="#dc2d28"
+					android:textStyle="bold|normal"/>
+
+
+				<TextView
+					android:textSize="15dip"
+					android:textStyle="bold"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15.0dip"
+					android:autoLink="web"
+					android:layout_marginTop="5.0dip"
+					android:text="https://fenixw2023.blogspot.com/p/politica-de-privacidad.html"
+					android:textColor="#ffffff"/>
+
+
+
+			</LinearLayout>
+
+
+
+
+
+
+			<com.google.android.gms.ads.AdView
+				xmlns:ads="http://schemas.android.com/apk/res-auto"
+				android:id="@+id/adBannerAbout"
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:layout_alignParentBottom="true"
+				ads:adSize="BANNER"
+				android:visibility="gone"
+				ads:adUnitId="ca-app-pub-8193985851272478/7054681017"
+				android:layout_gravity="center"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="5dp">
+
+			</com.google.android.gms.ads.AdView>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:gravity="center">
+
+				<TextView
+					android:layout_gravity="center"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Anuncios "
+					android:textColor="@color/white"
+					android:layout_alignParentBottom="true"
+					android:layout_centerHorizontal="true"
+					android:gravity="center"/>
+
+				<TextView
+					android:id="@+id/version_id"
+					android:layout_gravity="center"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="v.0"
+					android:textColor="@color/white"
+					android:layout_alignParentBottom="true"
+					android:layout_centerHorizontal="true"
+					android:gravity="center"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+
+
+	</ScrollView>
+
+
+
+</LinearLayout>
+

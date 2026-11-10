@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/app1"
+    android:orientation="vertical">
+
+    <!-- Agrega aquí los elementos de tu diálogo personalizado, como TextViews, ImageViews, etc. -->
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/equis"
+        android:backgroundTint="#FDFDFD"
+        app:tint="#FFFFFF" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Error al Actualizar"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Se produjo un error al buscar actualizaciones.\nNota: si este error continúa, comuníquese con el desarrollador para obtener más ayuda."
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:background="@drawable/app2"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

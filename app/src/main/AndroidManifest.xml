@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools">
+
+
+	<!--- Permissions -->
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" tools:ignore="LeanbackUsesWifi" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.POWER_SERVICE" />
+	<uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+	<uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+	<uses-permission android:name="android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED"/>
+
+	<!--- Application -->
+
+	<application
+		android:name="com.fenix.vpn.FenixApp"
+		android:allowBackup="true"
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name"
+		android:theme="@style/AppTheme"
+		android:hardwareAccelerated="true"
+		android:resizeableActivity="true"
+        android:usesCleartextTraffic="true"
+		tools:targetApi="n">
+
+
+		<!--- Activities -->
+
+		<activity android:name="com.fenix.vpn.LauncherActivity"
+			android:theme="@style/SplashScreenTheme"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+
+		<activity android:name="com.fenix.vpn.FenixMainActivity" />
+
+		<activity android:name="com.fenix.vpn.activities.ConfigGeralActivity"
+			android:parentActivityName="com.fenix.vpn.FenixMainActivity"
+			android:label="@string/settings"/>
+
+		<activity android:name="com.fenix.vpn.activities.ConfigImportFileActivity"
+			android:grantUriPermissions="true"
+			android:parentActivityName="com.fenix.vpn.FenixMainActivity"
+			android:label="@string/settings_import"
+			android:exported="true">
+			<intent-filter tools:ignore="AppLinkUrlError">
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+
+			</intent-filter>
+		</activity>
+
+        <activity android:name="com.fenix.vpn.servers.ServersActivity"
+			android:parentActivityName="com.fenix.vpn.FenixMainActivity"
+			android:label="Selecciona Tu Servidor"/>
+
+		<activity android:name="com.fenix.vpn.activities.ConfigExportFileActivity"
+			android:parentActivityName="com.fenix.vpn.FenixMainActivity"
+			android:label="@string/settings_export"/>
+
+		<activity android:name="com.fenix.vpn.activities.AboutActivity"
+			android:parentActivityName="com.fenix.vpn.FenixMainActivity"
+			android:label="@string/about"/>
+
+		<activity android:name="com.fenix.vpn.ExceptionActivity"/>
+
+		<activity
+			android:name="me.dawson.proxyserver.ui.ProxySettings" />
+
+		<service android:name="me.dawson.proxyserver.ui.ProxyService" />
+		<!--- Meta Data -->
+		<meta-data android:name="com.google.android.gms.ads.APPLICATION_ID"
+			android:value="ca-app-pub-8193985851272478~2589516575"/>
+		<meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+			android:value="true" />
+
+		<meta-data
+			android:name="com.google.firebase.messaging.default_notification_icon"
+			android:resource="@drawable/ic_wkk" />
+		<meta-data
+			android:name="com.google.firebase.messaging.default_notification_color"
+			android:resource="@color/red" />
+
+		<service
+			android:name="com.fenix.vpn.PushNotification"
+			android:exported="false">
+			<intent-filter>
+				<action android:name="com.google.firebase.MESSAGING_EVENT" />
+			</intent-filter>
+		</service>
+
+		<!-- corrige bug em Android 9 -->
+		<uses-library
+			android:name="org.apache.http.legacy"
+			android:required="false" />
+
+
+		<!-- SERVICE -->
+
+		<!-- - Activities  -->
+		<activity
+			android:name="com.fenix.sshservice.LaunchVpn"
+			android:autoRemoveFromRecents="true"
+			android:excludeFromRecents="true"
+			android:taskAffinity=".LaunchVPN"
+			android:theme="@style/AppThemeLogin"
+			android:label="@string/app_name"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+
+		<!-- Dummy activity para mantener el servicio corriendo -->
+		<activity
+			android:name="com.fenix.sshservice.util.DummyActivity"
+			android:allowTaskReparenting="true"
+			android:alwaysRetainTaskState="false"
+			android:clearTaskOnLaunch="true"
+			android:enabled="true"
+			android:excludeFromRecents="true"
+			android:finishOnTaskLaunch="true"
+			android:noHistory="true"
+			android:stateNotNeeded="true"
+			android:theme="@android:style/Theme.Translucent" />
+
+		<!-- - Receivers  -->
+		<receiver
+			android:name="com.fenix.sshservice.MainReceiver"
+			android:exported="true"
+			android:permission="TODO"
+			tools:ignore="ExportedReceiver">
+			<intent-filter>
+				<action android:name=".MainReceiver.ACTION_SERVICE_STOP"/>
+				<action android:name=".MainReceiver.ACTION_SERVICE_RESTART"/>
+			</intent-filter>
+		</receiver>
+
+		<!-- - Services  -->
+		<service
+			android:label="HTTP FenixVPN"
+			android:name="com.fenix.sshservice.tunnel.vpn.TunnelVpnService"
+			android:exported="false"
+			android:enabled="true"
+			android:permission="android.permission.BIND_VPN_SERVICE">
+			<intent-filter>
+				<action android:name="android.net.VpnService"/>
+			</intent-filter>
+		</service>
+
+		<service
+			android:label="HTTP FenixVPN Service"
+			android:name="com.fenix.sshservice.FenixVpnService"
+			android:foregroundServiceType="systemExempted"
+			android:stopWithTask="false"
+			android:exported="false"/>
+
+		<service
+			android:name="com.fenix.sshservice.NetSpeedNotification"
+			android:foregroundServiceType="dataSync"
+			android:exported="false"/>
+
+		<service
+			android:name="com.fenix.sshservice.V2Service"
+			android:exported="true"
+			android:foregroundServiceType="specialUse"
+			android:label="V2Service"
+			android:permission="android.permission.BIND_VPN_SERVICE">
+			<intent-filter>
+				<action android:name="android.net.VpnService" />
+			</intent-filter>
+			<meta-data
+				android:name="android.net.VpnService.SUPPORTS_ALWAYS_ON"
+				android:value="true" />
+			<property
+				android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+				android:value="vpn" />
+		</service>
+
+		<!-- - v2ray Services  -->
+		<service
+			android:name="hex.custom.lib.v2ray.services.V2rayVPNService"
+			android:exported="true"
+			android:foregroundServiceType="specialUse"
+			android:label="V2rayVPNService"
+			android:permission="android.permission.BIND_VPN_SERVICE">
+			<intent-filter>
+				<action android:name="android.net.VpnService" />
+			</intent-filter>
+			<meta-data
+				android:name="android.net.VpnService.SUPPORTS_ALWAYS_ON"
+				android:value="true" />
+			<property
+				android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+				android:value="vpn" />
+		</service>
+
+		<service
+			android:name="hex.custom.lib.v2ray.services.V2rayProxyService"
+			android:exported="true"
+			android:foregroundServiceType="specialUse"
+			android:label="V2rayProxyService"
+			android:permission="android.permission.BIND_VPN_SERVICE"
+			android:process=":RunSoLibV2RayDaemon">
+
+			<property
+				android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+				android:value="proxy" />
+
+		</service>
+
+	</application>
+
+
+</manifest>

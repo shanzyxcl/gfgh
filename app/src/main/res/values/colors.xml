@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="float_transparent">#00000000</color>
+    <color name="red">#FD1C0D</color>
+    <color name="yellow">#EEFD00</color>
+    <color name="green">@color/blue2</color>
+    <color name="blue">#07191b</color> <!-- Color Principal -->
+    <color name="blue2">#ffffff</color> <!-- Color Secundario -->
+    <color name="h_c2">#FFffff</color>
+    <color name="h_c">@color/blue</color>
+    <color name="colorText2">#000000</color>
+
+    <color name="rippelColor">#000000</color>
+    <color name="rippelColor1">#000000</color>
+
+    <color name="udp1">#666666</color>
+    <color name="udp2">@color/blue</color>
+
+    <color name="globe_network">#000000</color>
+    <color name="globe_network2">#ff32b7fc</color>
+    <color name="globe_tm_network">#860394</color>
+    <color name="globe_tm_network2">#fff000</color>
+    <color name="smart_network">#ff4baa4b</color>
+    <color name="smart_network2">#ff33a6e4</color>
+    <color name="smart_tnt_network">#ff4baa4b</color>
+    <color name="smart_tnt_network2">#fff000</color>
+    <color name="success">@color/blue</color>
+    <color name="sun_network">#fff000</color>
+    <color name="sun_network2">#fff000</color>
+    <color name="tm_network">#fff000</color>
+    <color name="tm_network2">#ff7939ec</color>
+    <color name="tnt_network">#fff000</color>
+    <color name="tnt_network2">#fffa2167</color>
+
+    <color name="black">#99000000</color>
+    <color name="sweet_dialog_bg_color">@color/colorSecondaryBackground</color>
+    <color name="button_text_color">#ffffff</color>
+    <color name="gray_btn_bg_color">@color/blue</color>
+    <color name="gray_btn_bg_pressed_color">@color/blue</color>
+    <color name="blue_btn_bg_color">@color/blue</color>
+    <color name="blue_btn_bg_pressed_color">@color/blue</color>
+    <color name="red_btn_bg_color">@color/blue</color>
+    <color name="red_btn_bg_pressed_color">@color/blue</color>
+    <color name="error_stroke_color">@color/red</color>
+    <color name="success_stroke_color">@color/blue</color>
+    <color name="trans_success_stroke_color">@color/blue</color>
+    <color name="warning_stroke_color">@color/blue</color>
+
+</resources>

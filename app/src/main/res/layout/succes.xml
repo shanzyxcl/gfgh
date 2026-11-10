@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:ads="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<androidx.cardview.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:padding="10dp"
+		app:cardBackgroundColor="#2A2B2C"
+		app:cardCornerRadius="10dp"
+		app:cardElevation="5dp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="80dp"
+				android:layout_marginBottom="10dp"
+				android:background="#0F0F10"
+				android:textColor="#FFFFFF"
+				android:gravity="center"
+				>
+
+				<ImageView
+					android:id="@+id/succes_Image"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginTop="10dp"
+					android:layout_marginBottom="10dp"
+					android:adjustViewBounds="true" />
+
+				<TextView
+					android:id="@+id/success_text1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_margin="10dp"
+					android:fontFamily="sans-serif-smallcaps"
+					android:gravity="center"
+					android:shadowColor="#FFFFFF"
+					android:shadowDy="5.0"
+					android:shadowRadius="1.5"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:textColor="#FFFFFF"
+					android:textSize="25sp"
+					android:textStyle="bold"
+					android:typeface="serif" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/happLinearLayout1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:gravity="center"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/success_text2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:autoLink="web"
+					android:gravity="center"
+					android:textSize="16sp"
+					android:textColor="#FFFFFF"
+					android:typeface="serif" />
+
+			</LinearLayout>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginLeft="10dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="10dp"
+				android:layout_marginBottom="5dp"
+				android:gravity="center">
+
+				<Button
+					android:id="@+id/success_ok"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:backgroundTint="#000000"
+					android:textColor="#F6F6F4"
+					android:textStyle="bold" />
+
+			</RelativeLayout>
+
+		</LinearLayout>
+
+	</androidx.cardview.widget.CardView>
+
+</LinearLayout>
+

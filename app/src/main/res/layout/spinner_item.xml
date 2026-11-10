@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/hansel"
+    android:paddingLeft="10.0dip"
+    android:paddingTop="8.0dip"
+    android:paddingRight="10.0dip"
+    android:paddingBottom="8.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="35.0dip"
+        android:layout_height="35.0dip"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip">
+
+        <TextView
+            android:textSize="13.0sp"
+            android:textStyle="bold"
+            android:textColor="#FFE4E4E4"
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚠️SELECCIONA TU SERVIDOR⚠️"/>
+
+        <TextView
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textSize="11.0sp"
+            android:typeface="monospace"
+            android:textColor="@color/blue"
+            android:gravity="center"
+            android:id="@+id/tvCountry"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="right"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="17.0dip"
+            android:layout_height="17.0dip"
+            android:src="@drawable/signal"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/ok12"
+            android:background="@drawable/stroke"
+            android:visibility="gone"
+            android:layout_width="60.0dip"
+            android:layout_height="25.0dip">
+
+            <TextView
+                android:textSize="10.0sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:id="@+id/tvInfo"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text"
+                tools:ignore="SmallSp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
