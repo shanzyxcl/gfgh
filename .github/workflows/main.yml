@@ -1,0 +1,68 @@
+name: Build Release APK
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        required: false
+        type: string
+
+jobs:
+  build:
+    name: Build Release APK
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+          
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: 17
+          
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          packages: 'platform-tools'
+          
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Set Gradle JVM args
+        run: echo "org.gradle.jvmargs=-Xmx4g -XX:MaxMetaspaceSize=512m" >> gradle.properties
+
+      - name: Clean Project
+        run: ./gradlew clean
+        
+      - name: Build APK
+        run: ./gradlew assembleRelease
+
+      - name: Get Version Name
+        id: version
+        run: |
+           VERSION=$(grep 'versionName' app/build.gradle | head -1 | sed "s/.*versionName ['\"]\\([^'\"]*\\)['\"].*/\\1/")
+           if [ -z "$VERSION" ]; then
+             echo "ERROR: Could not extract versionName from build.gradle" >&2
+             exit 1
+           fi
+           echo "name=$VERSION" >> $GITHUB_OUTPUT
+           
+      - name: Upload to GitHub Release
+        id: upload
+        if: github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.version.outputs.name }}
+          name: v${{ steps.version.outputs.name }}
+          body: |
+            ## v${{ steps.version.outputs.name }}
+            🔖 Commit: `${{ github.sha }}`
+            📋 ${{ github.event.head_commit.message }}
+          files: |
+            app/build/outputs/apk/release/*.apk
+          draft: false
+          prerelease: false
